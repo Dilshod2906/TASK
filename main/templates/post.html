@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postlar qo'shish</title>
+</head>
+<body>
+    {% for i in posts %}
+        <p style="color: rgb(36, 4, 181);" >Foydalanuvchi: {{ i.auther }}</p>
+        <p>Sarlavha: {{ i.title }}</p>
+        <p>Mavzuni yoritilganligi: {{ i.content }}</p>
+    {% endfor %}
+    <a href="{% url 'post_update' %}"><button style="color: white; background-color: blue;" >Yangilik tahrirlash</button></a>
+    <a href="{% url 'post_delate' %}"><button style="color: white; background-color: brown;">Yangilik o'chirish</button></a>
+</body>
+</html>

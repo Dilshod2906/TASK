@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container py-5">
+        <h1>Login</h1>
+        <form method="POST">
+          {% csrf_token %}
+          {{ login_form.as_p }}
+          <button style="background-color: blue;color: white;" type="submit">Login</button>
+        </form>
+        <p class="text-center">Siz hali royxatdan o'tmagansiz ! Ro'yxatdan otish uchun <a href="{% url 'register'%}">Registratsiya</a></p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postlarni o'chirish</title>
+</head>
+<body>
+    <h2 class="text-center">Postlarni o'chirish</h2><br><br>
+    <form action="#" method="post" >{% csrf_token %}
+    {{ form.as_p}}
+    <h4>Siz ushbu "<b>{{ posts.title }}</b>" yangiligini o'chirishni xohlaysizmi?</h4>
+    <button style="color: white;background-color: red;">O'chirish</button>
+    <button type="submit" style="color: white; background-color: blue;">Bekor qilish</button>
+</form>
+</body>
+</html>

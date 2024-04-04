@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoshilgan postlar</title>
+</head>
+<body>
+    <h1 style="margin-left: 45%; margin-top: 10%; ">Postlar qo'shish</h1>
+    <form action="" method="POST">{% csrf_token %}
+        {{ forms.as_p }}
+        <button type="submit">Kiritish</button>
+    </form>
+</body>
+</html>
